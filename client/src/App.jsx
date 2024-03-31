@@ -1,7 +1,7 @@
 import "./App.css";
-
+import ReactRouter from "./ReactRouter"
 function App() {
-  return <div>Let&apos;s Build Grow Geeky Together</div>;
+  return <ReactRouter />
 }
 
 export default App;
