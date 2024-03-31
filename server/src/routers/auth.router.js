@@ -1,8 +1,10 @@
-const express = require("express");
-const { login } = require("../services/auth.services");
+import express from "express";
+import { register } from "../services/register.services.js";
+import { login } from "../services/login.services.js";
 
 const authRouter = express.Router();
 
-authRouter.get("/login", login);
+authRouter.post("/login", login);
+authRouter.post("/register", register);
 
-export default authRouter;
+export { authRouter };
