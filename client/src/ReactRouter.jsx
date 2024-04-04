@@ -7,12 +7,14 @@ import Podcast from './page/Podcast';
 import Search from './page/Search';
 import SignUp from './page/SignUp';
 import SignIn from "./page/SignIn";
+import Navbar from './components/Navbar';
 
 const ReactRouter = () => {
     return (
         <>
         {/* react router setup */}
             <BrowserRouter>
+            <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/category" element={<Category />} />
