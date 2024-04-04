@@ -79,25 +79,25 @@ const Navbar = () => {
             </header>
             <div className="bg-[#dfdffb] hidden lg:block z-40">
                 <div className="mx-auto lg:max-w-7xl w-full px-5 py-8 flex gap-x-5 justify-between items-center">
-                    <button class="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px]">
+                    <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px]">
                         BUTTON CTA
                     </button>
-                    <button class="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px]">
+                    <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px]">
                         BUTTON CTA
                     </button>
-                    <button class="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px]">
+                    <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px]">
                         BUTTON CTA
                     </button>
-                    <button class="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px]">
+                    <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px]">
                         BUTTON CTA
                     </button>
-                    <button class="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px]">
+                    <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px]">
                         BUTTON CTA
                     </button>
-                    <button class="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px]">
+                    <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px]">
                         BUTTON CTA
                     </button>
-                    <button class="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px]">
+                    <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px]">
                         BUTTON CTA
                     </button>
                 </div>
