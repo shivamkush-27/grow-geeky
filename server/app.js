@@ -12,7 +12,7 @@ import { authRouter } from "./src/routers/auth.router.js";
 const PORT = process.env.PORT || 8080;
 const app = express();
 const server = http.createServer(app);
-
+const upload =multer(); 
 connectToDatabase();
 
 // middlewares
@@ -22,6 +22,7 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(upload.none());
+
 
 app.use("/api/v1", authRouter);
 
