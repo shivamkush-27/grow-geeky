@@ -1,12 +1,12 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from './page/Home';
-import Category from "./page/Category"
-import Podcast from './page/Podcast';
-import Search from './page/Search';
-import SignUp from './page/SignUp';
-import SignIn from "./page/SignIn";
+import Home from './pages/Home';
+import Category from "./pages/Category"
+import Podcast from './pages/Podcast';
+import Search from './pages/Search';
+import SignUp from './pages/SignUp';
+import SignIn from "./pages/SignIn";
 import Navbar from './components/Navbar';
 
 const ReactRouter = () => {
