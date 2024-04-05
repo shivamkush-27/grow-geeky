@@ -43,22 +43,34 @@ const Navbar = () => {
                             <li>
                                 <NavLink to="/podcast" className="relative py-2.5 duration-300 ease-linear hover:text-[#5459E8] after:absolute after:w-full after:left-0 after:bottom-0 after:h-px after:rounded-md after:origin-left after:ease-linear after:duration-300 after:scale-x-0 hover:after:scale-x-100 after:bg-[#5459E8]">Podcast</NavLink>
                             </li>
-                            <li>
+                            <li className="block md:hidden">
+                                <div class="relative rounded-full bg-white sm:mx-auto ">
+                                    <div class="mx-auto">
+                                        <form action="" class="mx-auto">
+                                            <input placeholder="Search Here" type="search" class="peer relative z-10 h-12 w-12 cursor-pointer rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-[#5459E8] focus:pl-16 focus:pr-4" />
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent stroke-black px-3.5 peer-focus:border-[#5459E8] peer-focus:stroke-[#5459E8]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                            </svg>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="hidden md:block">
                                 <button onClick={() => setOpen(!open)}
                                     className="relative py-0 lg:py-2.5"><Search />
                                 </button>
-                                    {
-                                        open &&
-                                        <div className="z-50 lg:w-80 w-full lg:absolute lg:left-[115px] lg:top-12 mt-4">
-                                            <form class="flex w-full text-black">
-                                                <input type="text" placeholder="Search Here" class="px-3 py-3 border border-[#5459E8] border-r-0 flex w-full bg-white" />
-                                                <button aria-label="search btn" class="text-white bg-[#5459E8] px-3 py-3 min-w-max">
-                                                    <Search />
-                                                </button>
+                                {
+                                    open &&
+                                    <div className="z-50 lg:w-80 w-full lg:absolute lg:left-[115px] lg:top-12 mt-4">
+                                        <form class="flex w-full text-black">
+                                            <input type="text" placeholder="Search Here" class="px-3 py-3 border border-[#5459E8] border-r-0 flex w-full bg-white" />
+                                            <button aria-label="search btn" class="text-white bg-[#5459E8] px-3 py-3 min-w-max">
+                                                <Search />
+                                            </button>
 
-                                            </form>
-                                        </div>
-                                    }
+                                        </form>
+                                    </div>
+                                }
                             </li>
 
                         </ul>
