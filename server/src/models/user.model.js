@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import names from "../data/names.json" assert { type: "json" };
+import { names } from "../data/names.js";
 
 const userSchema = new mongoose.Schema(
   {

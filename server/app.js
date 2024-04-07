@@ -8,11 +8,12 @@ import http from "http";
 import multer from "multer";
 import { connectToDatabase } from "./src/lib/db.js";
 import { authRouter } from "./src/routers/auth.router.js";
+import { errorHandler } from "./src/exceptions/root.js";
 
 const PORT = process.env.PORT || 8080;
 const app = express();
 const server = http.createServer(app);
-const upload =multer(); 
+const upload = multer();
 connectToDatabase();
 
 // middlewares
@@ -23,7 +24,7 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(upload.none());
 
-
-app.use("/api/v1", authRouter);
+app.use("/api/auth", authRouter);
+app.use(errorHandler);
 
 server.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
