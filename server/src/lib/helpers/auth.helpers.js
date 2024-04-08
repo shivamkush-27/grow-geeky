@@ -1,4 +1,5 @@
 import jwt from "jsonwebtoken";
+import bcrypt from 'bcryptjs';
 /**
  * @typedef {Object} AuthJwtPayload
  * @property {string} userId
@@ -36,4 +37,21 @@ const decodeAuthToken = (token) => {
   }
 };
 
-export { encodeAuthToken, decodeAuthToken };
+
+
+/**
+ 
+ * @param {string} plainPassword 
+ * @param {string} hashedPassword 
+ * @returns {Promise<boolean>} 
+ */
+const comparePasswords = async (plainPassword, hashedPassword) => {
+  try {
+    const isMatch = await bcrypt.compare(plainPassword, hashedPassword);
+    return isMatch;
+  } catch (error) {
+    throw error; 
+  }
+};
+
+export { encodeAuthToken, decodeAuthToken, comparePasswords };
