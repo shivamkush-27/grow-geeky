@@ -51,4 +51,11 @@ class TokenBlacklistedError extends HttpException {
   }
 }
 
-export { Unauthorized, Forbidden, Conflict, NotFoundUser, InvalidCredentialsError, InvalidTokenError, TokenExpired, TokenBlacklistedError };
+
+class BadRequest extends HttpException {
+  constructor(message) {
+    super(400, ErrorCodes.BAD_REQUEST, message || "Bad request", undefined);
+  }
+}
+
+export { Unauthorized, Forbidden, Conflict, NotFoundUser, InvalidCredentialsError, InvalidTokenError, TokenExpired, TokenBlacklistedError, BadRequest };
