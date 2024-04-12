@@ -2,6 +2,7 @@ import { useState } from "react";
 import logo from "../assets/logo.png";
 import { Search } from "lucide-react";
 import { NavLink } from "react-router-dom";
+import '../App.css';
 
 const Navbar = () => {
   const [navIsOpened, setNavIsOpened] = useState(false);
@@ -63,26 +64,11 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="block md:hidden">
-                <div className="relative bg-white rounded-full sm:mx-auto ">
-                  <div className="mx-auto">
-                    <form action="" className="mx-auto">
-                      <input
-                        placeholder="Search Here"
-                        type="search"
-                        className="peer relative z-10 h-12 w-12 cursor-pointer rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-[#5459E8] focus:pl-16 focus:pr-4"
-                      />
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent stroke-black px-3.5 peer-focus:border-[#5459E8] peer-focus:stroke-[#5459E8]"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                      </svg>
-                    </form>
-                  </div>
+                <div className="flex w-full rounded bg-white border">
+                  <input className=" w-full bg-transparent px-2 py-1 text-black outline-none focus:outline-none " type="search" name="search" placeholder="Search Here..." />
+                  <button type="submit" className="m-2 rounded bg-[#5459E8] px-4 py-2 text-white">
+                    <Search />
+                  </button>
                 </div>
               </li>
               <li className="hidden md:block">
