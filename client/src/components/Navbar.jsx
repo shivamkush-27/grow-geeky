@@ -99,7 +99,7 @@ const Navbar = () => {
                 toggleNavbar();
               }}
               aria-label="toggle navbar"
-              className="relative py-3 pl-3 border-l outline-none border-l-indigo-100"
+              className="relative py-3 pl-3 outline-none"
             >
               <span
                 aria-hidden={true}
