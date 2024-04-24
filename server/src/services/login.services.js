@@ -22,7 +22,7 @@ const login = async (req, res, next) => {
     const validPassword = await comparePasswords(password, user.password);
     if (!validPassword) return next(new InvalidCredentialsError());
 
-    const token = encodeAuthToken({ userId: user.id, email: user.email });
+    const token = encodeAuthToken({ userId: user._id, email: user.email });
 
     user = await User.findById(user._id).select("-password");
 
