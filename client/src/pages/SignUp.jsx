@@ -6,13 +6,13 @@ import { NavLink } from "react-router-dom";
 const SignUp = () => {
   return (
     <div>
-      <div className="flex flex-wrap text-slate-800 sm:px-10 md:px-3 w-full px-5 my-6 mx-auto lg:max-w-7xl">
+      <div className="flex flex-wrap sm:px-10 md:px-3 w-full gap-x-4 px-5 mb-5 mx-auto lg:max-w-7xl">
         <div className="relative hidden pl-3.5 pr-8 mt-12 select-none flex-col justify-center md:flex md:w-[45%]">
           <div className="mx-auto">
             <img src={signupImg} className="inline h-full bg-[#D9D9D9] rounded-[30px]" alt="Register to Grow Geeky" />
           </div>
         </div>
-        <div className="flex w-full flex-col md:w-[55%]">
+        <div className="flex w-full flex-col md:w-[50%]">
           <div className="flex justify-center pt-6 md:justify-end">
             <NavLink to="/" className="text-2xl font-bold text-blue-600">
               <img src={logo} className="inline h-16 text-black" alt="Grow Geeky" />

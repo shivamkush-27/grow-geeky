@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const SignIn = () => {
   return (
     <div>
-      <div className="flex flex-wrap justify-between text-slate-800 sm:px-10 md:px-3 gap-x-4 w-full px-5 my-6 mx-auto lg:max-w-7xl">
+      <div className="flex flex-wrap justify-between sm:px-10 md:px-3 gap-x-4 w-full px-5 mb-6 mx-auto lg:max-w-7xl">
         <div className="flex w-full flex-col md:w-[50%]">
           <div className="flex justify-center pt-6 md:justify-start">
             <NavLink to="/" className="text-2xl font-bold text-blue-600">
