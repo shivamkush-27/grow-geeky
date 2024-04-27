@@ -7,10 +7,10 @@ import { Ellipsis } from 'lucide-react';
 
 const Home = () => {
   return (
-    <div className="relative w-full px-5 mx-auto lg:max-w-7xl sm:px-10 md:px-12 lg:px-5">
-      <div className="overflow-x-hidden py-8">
-        <div className="container flex justify-between mx-auto">
-          <div className="w-full lg:w-9/12 ml-2">
+    <div className="relative w-full px-2 mx-auto lg:max-w-7xl mt-4 sm:px-10 md:px-12 lg:px-5">
+      <div className="overflow-x-hidden lg:py-8">
+        <div className="lg:container flex justify-between mx-auto">
+          <div className="w-full lg:w-9/12 lg:ml-2">
             <div className="relative flex w-full max-w-4xl flex-col p-2.5 rounded bg-white bg-clip-border text-gray-700 shadow-[0px_5px_20px_0px_#5459e861] ">
               <div className="relative overflow-hidden rounded-lg bg-blue-gray-500 bg-clip-border text-white max-h-52">
                 <img
@@ -41,9 +41,9 @@ const Home = () => {
             </div>
             <div className='my-6'>
               <div className="relative flex w-full max-w-4xl flex-col p-2.5 rounded bg-white bg-clip-border text-gray-700 shadow-[0px_5px_20px_0px_#5459e861]">
-                <div className="md:flex gap-x-6 md:mr-0 mr-10 ml-2">
+                <div className="md:flex gap-x-6 md:mr-0 lg:mr-10 md:ml-2">
                   <div className="md:flex items-center">
-                    <div className="pr-14">
+                    <div className="lg:pr-14">
                       <div className="flex items-center">
                         <img className="overflow-hidden object-cover w-4 h-4 md:w-6 md:h-6 rounded-full " src={Amit} alt="author image" />
                         <div className="flex ml-2 text-sm font-normal text-[#292929]">

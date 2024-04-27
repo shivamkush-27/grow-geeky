@@ -2,6 +2,7 @@ import { useState } from "react";
 import logo from "../assets/logo.png";
 import { Search } from "lucide-react";
 import { NavLink } from "react-router-dom";
+import { NAV_LINKS, TAG_LINKS } from '../constant/site';
 import '../App.css';
 
 const Navbar = () => {
@@ -39,30 +40,13 @@ const Navbar = () => {
         `}
           >
             <ul className="flex flex-col gap-10 text-black lg:flex-row lg:items-center lg:w-full lg:justify-center">
-              <li>
-                <NavLink
-                  to="/"
-                  className="relative py-2.5 duration-300 ease-linear hover:text-[#5459E8] after:absolute after:w-full after:left-0 after:bottom-0 after:h-px after:rounded-md after:origin-left after:ease-linear after:duration-300 after:scale-x-0 hover:after:scale-x-100 after:bg-[#5459E8]"
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/category"
-                  className="relative py-2.5 duration-300 ease-linear hover:text-[#5459E8] after:absolute after:w-full after:left-0 after:bottom-0 after:h-px after:rounded-md after:origin-left after:ease-linear after:duration-300 after:scale-x-0 hover:after:scale-x-100 after:bg-[#5459E8]"
-                >
-                  Category{" "}
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/podcast"
-                  className="relative py-2.5 duration-300 ease-linear hover:text-[#5459E8] after:absolute after:w-full after:left-0 after:bottom-0 after:h-px after:rounded-md after:origin-left after:ease-linear after:duration-300 after:scale-x-0 hover:after:scale-x-100 after:bg-[#5459E8]"
-                >
-                  Podcast
-                </NavLink>
-              </li>
+              {NAV_LINKS.map((link, index)=>(
+                <li key={index}>
+                  <NavLink to={link.href} className="relative py-2.5 duration-300 ease-linear hover:text-[#5459E8] after:absolute after:w-full after:left-0 after:bottom-0 after:h-px after:rounded-md after:origin-left after:ease-linear after:duration-300 after:scale-x-0 hover:after:scale-x-100 after:bg-[#5459E8]">
+                    {link.label}
+                  </NavLink>
+                </li>
+              ))}
               <li className="block md:hidden">
                 <div className="flex w-full rounded bg-white border">
                   <input className=" w-full bg-transparent px-2 py-1 text-black outline-none focus:outline-none " type="search" name="search" placeholder="Search Here..." />
@@ -130,19 +114,12 @@ const Navbar = () => {
       </header>
       <div className="bg-[#dfdffb] hidden lg:block z-40">
         <div className="flex items-center justify-between w-screen px-5 py-8 mx-auto overflow-x-auto lg:max-w-7xl gap-x-5">
-          <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px] shrink-0">BUTTON CTA</button>
-          <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px] shrink-0">BUTTON CTA</button>
-          <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px] shrink-0">BUTTON CTA</button>
-          <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px] shrink-0">BUTTON CTA</button>
-          <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px] shrink-0">BUTTON CTA</button>
-          <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px] shrink-0">BUTTON CTA</button>
-          <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px] shrink-0">BUTTON CTA</button>
-          <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px] shrink-0">BUTTON CTA</button>
-          <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px] shrink-0">BUTTON CTA</button>
-          <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px] shrink-0">BUTTON CTA</button>
-          <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px] shrink-0">BUTTON CTA</button>
-          <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px] shrink-0">BUTTON CTA</button>
-          <button className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px] shrink-0">BUTTON CTA</button>
+          {TAG_LINKS.map((link, index)=>(
+            <span key={index}>
+              <NavLink to={link.href} className="bg-white text-[#5459E8] font-medium py-2 px-6 rounded-[10px] shrink-0">{link.label}</NavLink>
+            </span>
+          ))}
+          
         </div>
       </div>
     </>
