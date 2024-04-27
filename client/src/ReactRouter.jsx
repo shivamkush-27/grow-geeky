@@ -6,13 +6,13 @@ import Podcast from "./pages/Podcast";
 import Search from "./pages/Search";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
-import Navbar from "./components/Navbar";
+import ShowNavbar from "./components/ShowNavbar";
 
 const ReactRouter = () => {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <ShowNavbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/category" element={<Category />} />
