@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="relative w-full px-2 mx-auto lg:max-w-7xl mt-4 sm:px-10 md:px-12 lg:px-5">
       <div className="overflow-x-hidden lg:py-8">
-        <div className="lg:container flex justify-between mx-auto">
+        <div className="lg:container flex justify-between mx-auto gap-x-8">
           <div className="w-full lg:w-9/12 lg:ml-2">
             <div className="relative flex w-full max-w-4xl flex-col p-2.5 rounded bg-white bg-clip-border text-gray-700 shadow-[0px_5px_20px_0px_#5459e861] ">
               <div className="relative overflow-hidden rounded-lg bg-blue-gray-500 bg-clip-border text-white max-h-52">
@@ -57,7 +57,7 @@ const Home = () => {
                       <p className="mt-2 text-base font-normal ">An intense way to learn about the process and practice your designs skills — My 1st hackathon have been on my mind since I heard it was a good way to gain experience as a junior UX designer. As my portfolio...</p>
                       <div className='my-5 flex justify-between items-center'>
                         <div className='flex items-center gap-x-3'>
-                          <span className="inline-flex items-center gap-1 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-[#5459E8]">#portfolio</span>
+                          <button className="inline-flex items-center gap-1 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-[#5459E8]">#portfolio</button>
                           <h5 className="block text-xs font-medium text-[#6E6E6E] antialiased">
                             3 Min Read
                           </h5>

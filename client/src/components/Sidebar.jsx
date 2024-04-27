@@ -56,7 +56,7 @@ const Sidebar = () => {
                 <div className='my-4'>
                     <h3 className='font-normal text-base text-[#292929]'>Recommended Topic</h3>
                     <div className='flex flex-wrap gap-3 my-4'>
-                        {TAG_LINKS.map((link, index)=>(
+                        {CTA_BTN.map((link, index)=>(
                             <span key={index} className='my-2'><NavLink to={link.href} className='bg-[#F2F2F2] py-[10px] px-4 rounded-full text-sm font-normal text-[#292929]'>{link.label}</NavLink></span>
                         ))}
                     </div>

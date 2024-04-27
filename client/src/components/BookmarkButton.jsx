@@ -3,11 +3,9 @@ import { BookmarkPlus, BookmarkCheck } from 'lucide-react';
 
 const BookmarkButton = () => {
   const [isActive, setIsActive] = useState(false);
-
   const toggleBookmark = () => {
     setIsActive(!isActive);
   };
-
   return (
     <button onClick={toggleBookmark} className="focus:outline-none">
       {isActive ? (
