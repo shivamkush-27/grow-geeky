@@ -31,7 +31,7 @@ const register = async (req, res, next) => {
     user = await User.findById(user._id).select("-password");
 
     //generate auth token
-    const token = encodeAuthToken({ userId: user.id, email: user.email });
+    const token = encodeAuthToken({ userId: user._id, email: user.email });
 
     //set auth  token to cookie and send response with user data
     res
