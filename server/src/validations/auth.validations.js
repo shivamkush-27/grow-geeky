@@ -18,18 +18,28 @@ const passwordSchema = z
     message: "Password must contain at least one special character",
   });
 
-const emailSchema = z.string().email({ message: "Please enter a valid email address" });
+const emailSchema = z
+  .string()
+  .email({ message: "Please enter a valid email address" });
 
 const authSchema = z.object({
   email: emailSchema,
   password: passwordSchema,
 });
 
-const loginSchema = z.object({ email: authSchema.shape.email, password: z.string() });
+const loginSchema = z.object({
+  email: authSchema.shape.email,
+  password: z.string(),
+});
 
 const registerSchema = authSchema.extend({
   username: z.string(),
-  name: z.string({ required_error: "name is required" }).min(2, { message: "Name must have more than 2 character" }),
+  name: z
+    .string({ required_error: "name is required" })
+    .min(2, { message: "Name must have more than 2 character" }),
 });
 
-export { registerSchema, loginSchema };
+const forgotPasswordSchema = z.object({ email: authSchema.shape.email });
+const resetPassword = z.object({password: passwordSchema });
+
+export { registerSchema, loginSchema,forgotPasswordSchema,resetPassword };

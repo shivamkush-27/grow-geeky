@@ -28,7 +28,7 @@ const ErrorCodes = {
  */
 const errorHandler = (error, req, res, next) => {
   const { statusCode, errorCode, message, errors } = error;
-  res.status(statusCode).json({
+  res.status(statusCode ?? 500).json({
     error: {
       code: errorCode,
       message,

@@ -18,9 +18,9 @@ import bcrypt from 'bcryptjs';
  * @param {AuthJwtPayload} payload
  * @returns {string}
  */
-const encodeAuthToken = (payload) => {
+const encodeAuthToken = (payload,exptime="7d") => {
   return jwt.sign(payload, process.env.JWT_SECRET, {
-    expiresIn: "7d",
+    expiresIn: exptime,
   });
 };
 
