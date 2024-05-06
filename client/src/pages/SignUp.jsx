@@ -7,9 +7,9 @@ const SignUp = () => {
   return (
     <div>
       <div className="flex flex-wrap sm:px-10 md:px-3 w-full gap-x-4 px-5 mb-5 mx-auto lg:max-w-7xl">
-        <div className="relative hidden pl-3.5 pr-8 mt-12 select-none flex-col justify-center md:flex md:w-[45%]">
+        <div className="relative hidden pl-3.5 pr-8 mt-8 select-none flex-col justify-center md:flex md:w-[45%]">
           <div className="mx-auto">
-            <img src={signupImg} className="inline h-full bg-[#D9D9D9] rounded-[30px]" alt="Register to Grow Geeky" />
+            <img src={signupImg} className="inline h-screen bg-[#D9D9D9] rounded-[30px]" alt="Register to Grow Geeky" />
           </div>
         </div>
         <div className="flex w-full flex-col md:w-[50%]">
@@ -18,12 +18,12 @@ const SignUp = () => {
               <img src={logo} className="inline h-16 text-black" alt="Grow Geeky" />
             </NavLink>
           </div>
-          <div className="flex flex-col justify-center px-2 pt-4 md:px-4 md:pt-8 md:justify-start lg:w-full">
+          <div className="flex flex-col justify-center px-2 pt-4 md:px-4 md:pt-0 md:justify-start lg:w-full">
             <p className="text-center text-4xl font-semibold md:text-left md:leading-tight">Sign Up</p>
             <p className="mt-3 text-center text-[#313131] font-normal md:text-left">
               Let’s get you all st up so you can access your personal account.
             </p>
-            <form className="flex flex-col items-stretch pt-3 md:pt-8">
+            <form className="flex flex-col items-stretch pt-3 md:pt-6">
               <div className="grid gap-3 md:grid-cols-2">
                 <div className='relative'>
                   <input type="text" id="fname" className="border-1 peer block w-full appearance-none rounded-lg border border-[#79747E] bg-transparent px-2.5 pb-2.5 pt-4 text-sm text-black focus:border-[#5459E8] focus:outline-none focus:ring-0" />
@@ -62,13 +62,13 @@ const SignUp = () => {
                   <span className="text-sm text-black text-medium">I agree to all the <a href="#" target="_blank" className="text-[#ff8682] font-medium hover:underline-offset-2 hover:underline"> Terms </a> and <a href="#" target="_blank" className="text-[#ff8682] font-medium hover:underline-offset-2 hover:underline"> Privacy Policies </a></span>
                 </label>
               </div>
-              <button type="submit" className="mt-6 rounded bg-[#515DEF] px-4 py-2 text-center text-base font-semibold text-[#F3F3F3] shadow-md outline-none transition hover:bg-blue-700">Create Account</button>
+              <button type="submit" className="mt-2 rounded bg-[#515DEF] px-4 py-2 text-center text-base font-semibold text-[#F3F3F3] shadow-md outline-none transition hover:bg-blue-700">Create Account</button>
               <p className="my-2 text-center text-sm font-medium text-gray-900">Already have an account? <NavLink to="/signin" className="text-[#ff8682] hover:underline-offset-2 hover:underline">Login</NavLink></p>
             </form>
-            <div className="relative mt-8 flex h-px place-items-center bg-gray-200">
+            <div className="relative mt-4 flex h-px place-items-center bg-gray-200">
               <div className="absolute left-1/2 h-6 -translate-x-1/2 bg-white px-4 text-center text-sm text-gray-500">Or Sign up with</div>
             </div>
-            <div className='my-10'>
+            <div className='my-6'>
               <div className="grid grid-cols-3 gap-3">
                 <button type="button" className="transition duration-200 border border-[#515DEF] w-full py-2 md:py-4 px-8 rounded text-sm shadow-sm hover:shadow-md font-normal text-center flex justify-center">
                   <svg className='h-6 w-6 md:h-8 md:w-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509 509"><g fill-rule="nonzero"><path fill="#0866FF" d="M509 254.5C509 113.94 395.06 0 254.5 0S0 113.94 0 254.5C0 373.86 82.17 474 193.02 501.51V332.27h-52.48V254.5h52.48v-33.51c0-86.63 39.2-126.78 124.24-126.78 16.13 0 43.95 3.17 55.33 6.33v70.5c-6.01-.63-16.44-.95-29.4-.95-41.73 0-57.86 15.81-57.86 56.91v27.5h83.13l-14.28 77.77h-68.85v174.87C411.35 491.92 509 384.62 509 254.5z" /><path fill="#fff" d="M354.18 332.27l14.28-77.77h-83.13V227c0-41.1 16.13-56.91 57.86-56.91 12.96 0 23.39.32 29.4.95v-70.5c-11.38-3.16-39.2-6.33-55.33-6.33-85.04 0-124.24 40.16-124.24 126.78v33.51h-52.48v77.77h52.48v169.24c19.69 4.88 40.28 7.49 61.48 7.49 10.44 0 20.72-.64 30.83-1.86V332.27h68.85z" /></g></svg>

@@ -11,8 +11,8 @@ const Home = () => {
       <div className="overflow-x-hidden lg:py-8">
         <div className="lg:container flex justify-between mx-auto gap-x-8">
           <div className="w-full lg:w-9/12 lg:ml-2">
-            <div className="relative flex w-full max-w-4xl flex-col p-2.5 rounded bg-white bg-clip-border text-gray-700 shadow-[0px_5px_20px_0px_#5459e861] ">
-              <div className="relative overflow-hidden rounded-lg bg-blue-gray-500 bg-clip-border text-white max-h-52">
+            <div className="relative flex w-full max-w-4xl flex-col p-2 rounded-[5px] bg-white bg-clip-border text-gray-700 shadow-[0px_5px_20px_0px_#5459e861] ">
+              <div className="relative overflow-hidden rounded-[5px] bg-blue-gray-500 bg-clip-border text-white max-h-52">
                 <img
                   src="https://blog.luyencode.net/wp-content/uploads/2018/11/baitap-javascript-11-1024x536.png" alt="Javascript" className='w-full object-cover' />
               </div>
