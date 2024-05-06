@@ -56,14 +56,14 @@ const SignUp = () => {
                   <label for="confirm-password" className="absolute top-2 left-1.5 z-10 origin-[0] -translate-y-4 scale-75 transform cursor-text select-none bg-white px-1 text-sm text-black duration-300 peer-placeholder-shown:top-[30%] peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-[#5459E8]"> Confirm Password </label>
                 </div>
               </div>
-              <div className="my-4">
+              <div className="mb-4">
                 <label className="flex space-x-3">
                   <input type="checkbox" className="h-5 w-5" />
-                  <span className="text-sm text-black text-medium">I agree to all the <a href="#" target="_blank" className="text-[#ff8682]"> Terms </a> and <a href="#" target="_blank" className="text-[#ff8682]"> Privacy Policies </a></span>
+                  <span className="text-sm text-black text-medium">I agree to all the <a href="#" target="_blank" className="text-[#ff8682] font-medium hover:underline-offset-2 hover:underline"> Terms </a> and <a href="#" target="_blank" className="text-[#ff8682] font-medium hover:underline-offset-2 hover:underline"> Privacy Policies </a></span>
                 </label>
               </div>
               <button type="submit" className="mt-6 rounded bg-[#515DEF] px-4 py-2 text-center text-base font-semibold text-[#F3F3F3] shadow-md outline-none transition hover:bg-blue-700">Create Account</button>
-              <p className="my-2 text-center text-sm font-medium text-gray-900">Already have an account? <NavLink to="/signin" className="text-[#ff8682]">Login</NavLink></p>
+              <p className="my-2 text-center text-sm font-medium text-gray-900">Already have an account? <NavLink to="/signin" className="text-[#ff8682] hover:underline-offset-2 hover:underline">Login</NavLink></p>
             </form>
             <div className="relative mt-8 flex h-px place-items-center bg-gray-200">
               <div className="absolute left-1/2 h-6 -translate-x-1/2 bg-white px-4 text-center text-sm text-gray-500">Or Sign up with</div>

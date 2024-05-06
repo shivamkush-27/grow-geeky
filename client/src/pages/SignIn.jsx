@@ -36,11 +36,11 @@ const SignIn = () => {
                 <label className="flex flex-wrap content-center">
                   <input type="checkbox" className="h-5 w-5 mr-2" /> 
                   <span className="mr-auto text-sm text-black font-medium">Remember me</span>
-                  <NavLink to="#" className="text-sm font-medium text-[#FF8682]">Forgot password?</NavLink>
+                  <NavLink to="#" className="text-sm font-medium text-[#FF8682] hover:underline-offset-2 hover:underline">Forgot password?</NavLink>
                 </label>
               </div>
               <button type="submit" className="mt-6 rounded bg-[#515DEF] px-4 py-3 text-center text-base font-semibold text-[#F3F3F3] shadow-md outline-none transition hover:bg-blue-700">Login</button>
-              <p className="my-4 text-center text-sm font-medium text-gray-900">Don't have an account? <NavLink to="/signup" className="text-[#ff8682]">Sign up</NavLink></p>
+              <p className="my-4 text-center text-sm font-medium text-gray-900">Don't have an account? <NavLink to="/signup" className="text-[#ff8682] hover:underline-offset-2 hover:underline">Sign up</NavLink></p>
             </form>
             <div className="relative mt-8 flex h-px place-items-center bg-gray-200">
               <div className="absolute left-1/2 h-6 -translate-x-1/2 bg-white px-4 text-center text-sm text-gray-500">Or login with</div>
