@@ -5,15 +5,14 @@ import { NavLink } from "react-router-dom";
 
 const SignUp = () => {
   return (
-    <div>
-      <div className="flex flex-wrap sm:px-10 md:px-3 w-full gap-x-4 px-5 mb-5 mx-auto lg:max-w-7xl">
-        <div className="relative hidden pl-3.5 pr-8 mt-8 select-none flex-col justify-center md:flex md:w-[45%]">
+      <div className="min-h-screen flex flex-wrap sm:px-10 md:px-3 w-full gap-x-4 p-3 mx-auto lg:max-w-7xl">
+        <div className="hidden pl-3.5 pr-8 select-none flex-col items-center justify-center md:flex md:w-[45%]">
           <div className="mx-auto">
-            <img src={signupImg} className="inline h-screen bg-[#D9D9D9] rounded-[30px]" alt="Register to Grow Geeky" />
+            <img src={signupImg} className="bg-[#D9D9D9] h-[40rem] rounded-[30px]" alt="Register to Grow Geeky" />
           </div>
         </div>
         <div className="flex w-full flex-col md:w-[50%]">
-          <div className="flex justify-center pt-6 md:justify-end">
+          <div className="flex justify-center md:justify-end">
             <NavLink to="/" className="text-2xl font-bold text-blue-600">
               <img src={logo} className="inline h-16 text-black" alt="Grow Geeky" />
             </NavLink>
@@ -68,7 +67,7 @@ const SignUp = () => {
             <div className="relative mt-4 flex h-px place-items-center bg-gray-200">
               <div className="absolute left-1/2 h-6 -translate-x-1/2 bg-white px-4 text-center text-sm text-gray-500">Or Sign up with</div>
             </div>
-            <div className='my-6'>
+            <div className='mt-6'>
               <div className="grid grid-cols-3 gap-3">
                 <button type="button" className="transition duration-200 border border-[#515DEF] w-full py-2 md:py-4 px-8 rounded text-sm shadow-sm hover:shadow-md font-normal text-center flex justify-center">
                   <svg className='h-6 w-6 md:h-8 md:w-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509 509"><g fill-rule="nonzero"><path fill="#0866FF" d="M509 254.5C509 113.94 395.06 0 254.5 0S0 113.94 0 254.5C0 373.86 82.17 474 193.02 501.51V332.27h-52.48V254.5h52.48v-33.51c0-86.63 39.2-126.78 124.24-126.78 16.13 0 43.95 3.17 55.33 6.33v70.5c-6.01-.63-16.44-.95-29.4-.95-41.73 0-57.86 15.81-57.86 56.91v27.5h83.13l-14.28 77.77h-68.85v174.87C411.35 491.92 509 384.62 509 254.5z" /><path fill="#fff" d="M354.18 332.27l14.28-77.77h-83.13V227c0-41.1 16.13-56.91 57.86-56.91 12.96 0 23.39.32 29.4.95v-70.5c-11.38-3.16-39.2-6.33-55.33-6.33-85.04 0-124.24 40.16-124.24 126.78v33.51h-52.48v77.77h52.48v169.24c19.69 4.88 40.28 7.49 61.48 7.49 10.44 0 20.72-.64 30.83-1.86V332.27h68.85z" /></g></svg>
@@ -84,7 +83,6 @@ const SignUp = () => {
           </div>
         </div>
       </div>
-    </div>
   )
 }
 
